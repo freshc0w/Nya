@@ -15,7 +15,7 @@ body {
 	position: absolute;
 	top: 50%;
 	opacity: 0.8;
-	transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(10deg)
+	transform: translate3d(-50%, -50%, 0) perspective(900px) rotatey(15deg)
 		rotateX(-10deg);
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .images-line:nth-child(even) {
-	animation-duration: calc(var(--duration) * 1.7);
+	animation-duration: calc(var(--duration) * 1.5);
 }
 
 .line {
@@ -35,13 +35,15 @@ body {
 	flex: none;
 	height: 29vh;
 	margin: clamp(10px, 2vw, 20px);
-	width: 15vh;
+	/* width: min(185px, 12.5vw); */
+	width: 20vh;
 	position: relative;
 	transition: ease-in-out all 0.3s;
 	border-radius: 1rem;
 }
 
 .img {
+	border: 1.5px solid white;
     position: absolute;
     z-index: 2;
     width: 100%;
