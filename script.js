@@ -9,7 +9,7 @@ imgClasses.forEach((img) => {
 	if (img.tagName === "IMG") {
 		img.src = `./images/${imgCount}.jpg`;
 		imgCount++;
-		if (imgCount === 68) imgCount = 1;
+		if (imgCount === 70) imgCount = 1;
 	} else {
 		img.setAttribute("preload", "none");
 		try {
@@ -20,7 +20,7 @@ imgClasses.forEach((img) => {
 			img.src = `./videos/video${vidCount}.mp4`;
 			console.log(err);
 		}
-		if (vidCount === 13) vidCount = 1;
+		if (vidCount === 14) vidCount = 1;
 	}
 
 	img.tagName === "IMG"
